@@ -1,0 +1,73 @@
+{
+  "directed_by": {
+    "slots": [],
+    "nl_first": [
+      "What's the director?"
+    ],
+    "nl_more": [
+      "Does it has any other director?"
+    ]
+  },
+  "release_year": {
+    "slots": [],
+    "nl_first": [
+      "What's the release year?"
+    ],
+    "nl_more": [
+      "Does it has any other release year?"
+    ]
+  },
+  "written_by": {
+    "slots": [],
+    "nl_first": [
+      "Who's the writer?"
+    ],
+    "nl_more": [
+      "Does it has any other writer?"
+    ]
+  },
+  "starred_actors": {
+    "slots": [],
+    "nl_first": [
+      "What's the starred actors?"
+    ],
+    "nl_more": [
+      "Does it has any other starred actors?"
+    ]
+  },
+  "has_genre": {
+    "slots": [],
+    "nl_first": [
+      "What's the genre?"
+    ],
+    "nl_more": [
+      "Does it has any other genre?"
+    ]
+  },
+  "has_tags": {
+    "slots": [],
+    "nl_first": [
+      "What are the tags?"
+    ],
+    "nl_more": [
+      "Does it has any other tags?"
+    ]
+  },
+  "in_language": {
+    "slots": [],
+    "nl_first": [
+      "What's the language?"
+    ],
+    "nl_more": [
+      "Does it has any other language?"
+    ]
+  },
+  "guess": {
+    "slots": ["movie"],
+    "nl_first": [
+      "I guess the movie is $movie$."
+    ],
+    "nl_more": [
+    ]
+  }
+}

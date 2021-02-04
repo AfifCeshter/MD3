@@ -1,0 +1,75 @@
+# Guess movie game config file
+
+dataset:
+  agent_template_path: data/agent_template.json
+  simulator_template_path: data/simulator_template.json
+
+  # dataset with prefix
+  data_prefix: data/wo_entity/
+
+  # vocabulary & embeddings
+  vocab_path: vocab/vocab.txt
+  embedding_path: vocab/gm_glove.840B.300d.npy
+  embedding_freeze: True
+
+  # documents knowledge
+  doc_id_path: guessmovie_dialog_doc_id.json
+#  doc_id_path: doc_rep/guessmovie_rep_doc_id.json
+
+  # Not used. Effective when 'global/all_docs' is False
+  cand_doc_path: dialog_doc_cand_name.json
+
+global:
+  random_seed: 123
+  num_data_workers: 16
+
+  all_docs: False
+  cand_doc_num: 32  # effective when 'global/all_docs' is False
+
+  max_qa_length: 100    # 100 for one turn, 512 for dialog history
+  max_sent_length: 90
+  max_sent_num: 14
+  max_doc_length: 512
+  max_turns: 5
+
+  agent_type: model-model # [rule/model]-[none/rand/fixed/rule/model]
+  simulator_type: rule # rule, model
+  simulator_rand: 0.1
+  full_answer: False
+  force_guess: True   # effective only when testing
+  guess_thre: 0.5
+  mask_his: 1.0
+
+model:
+  embedding_num: 92000
+  embedding_dim: 300
+  doc_hierarchical: True
+  use_glove: True
+  hidden_size: 200
+  dropout_p: 0.2
+  layer_norm: false
+
+train:
+  num_epochs: 10
+  train_iters: 50000    # training iters
+  test_iters: 5000       # testing iters
+
+  evaluate_freq: 100    # evaluating frequency
+  evaluate_steps: 1000   # evaluating latest samples
+  save_steps: 1000      # saving frequency
+
+  batch_size: 32
+  optimizer: adam   # adam, sgd, adamax, adadelta(default is adamax)
+  learning_rate: 0.0003
+  clip_grad_norm: 5
+
+rl-train:
+  e2e: False  # joint training state-net and policy-net
+  gamma: 0.9
+
+  # DQN
+  epsilon: 0.2
+  warmup: True
+  warmup_steps: 500
+  update_freq: 4
+  experience_pool_size: 10000

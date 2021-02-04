@@ -1,0 +1,6 @@
+('release_year', 16299)
+('directed_by', 14853)
+('starred_actors', 13204)
+('written_by', 12712)
+('has_genre', 12118)
+('in_language', 3071)

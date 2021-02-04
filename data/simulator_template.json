@@ -1,0 +1,56 @@
+{
+  "directed_by": {
+    "slots": ["director"],
+    "nl_first": [
+      "The director of this movie is $director$.",
+      "It's director is $director$.",
+      "$director$ is the director of this movie.",
+      "$director$ directed this movie."
+    ]
+  },
+  "release_year": {
+    "slots": ["year"],
+    "nl_first": [
+      "It's a $year$ film.",
+      "It's released on $year$."
+    ]
+  },
+  "written_by": {
+    "slots": ["writor"],
+    "nl_first": [
+      "It's written by $writor$.",
+      "$writor$ write this movie."
+    ]
+  },
+  "starred_actors": {
+    "slots": ["actors"],
+    "nl_first": [
+      "It stars $actors$.",
+      "The film's cast includes $actors$ in lead roles."
+    ]
+  },
+  "has_genre": {
+    "slots": ["genre"],
+    "nl_first": [
+      "It's a $genre$."
+    ]
+  },
+  "has_tags": {
+    "slots": ["tag"],
+    "nl_first": [
+      "The tag is $tag$."
+    ]
+  },
+  "in_language": {
+    "slots": ["language"],
+    "nl_first": [
+      "The language is $language$."
+    ]
+  },
+  "guess": {
+    "slots": ["is_success"],
+    "nl_first": [
+      "Your guess is $is_success$."
+    ]
+  }
+}
