@@ -1,5 +1,5 @@
 # Multi-Document Driven Dialogue (MD3)
-This is the code for AAAI2021 paper [Converse, Focus and Guess - Towards Multi-Document Driven Dialogue](https://).
+This is the code for AAAI2021 paper [Converse, Focus and Guess - Towards Multi-Document Driven Dialogue](https://arxiv.org/abs/2102.02435).
 
 ## Requirements
 - Ubuntu 16.04
@@ -9,7 +9,7 @@ This is the code for AAAI2021 paper [Converse, Focus and Guess - Towards Multi-D
 ## Dataset: GuessMovie
 We build a benchmark GuessMovie dataset for MD3 task on the base of the dataset WikiMovies (Miller et al. 2016). It includes 16,881 documents with 6 different attributes (i.e. directed_by, release_year, written_by, starred_actors, has_genre, in_language). The dataset can be downloaded from the [link](https://mega.nz/file/AKogESCC#P-30oCiN8yUeq9vGAbVpctbcVjoj1IVh6iA9BfLs8ZU), and should be decompressed to the data directory of this repository.
 
-<img src="https://github.com/laddie132/MD3/raw/master/imgs/example.png" width="600" alt="" align=center/>
+<img src="https://github.com/laddie132/MD3/raw/main/imgs/example.png" width="500" alt="" align=center/>
 
 ## Preprocess
 To preprocess, we provide several methods.
