@@ -1,5 +1,5 @@
 # Dataset: GuessMovie
-The dataset can be downloaded from the [link](https://mega.nz/file/AKogESCC#P-30oCiN8yUeq9vGAbVpctbcVjoj1IVh6iA9BfLs8ZU). You should decompress it and move all the files to the current directory.
+The dataset can be downloaded from the [link](https://drive.google.com/file/d/1CQot9g5dYSm2xG7Q-n0CoWpTGXi6w0vG). You should decompress it and move all the files to the current directory.
 
 - `guessmovie_doc.json`: 16,881 documents with structured KB.
 - `guessmovie_dialog.json`: 13,434 simulated dialogues.
